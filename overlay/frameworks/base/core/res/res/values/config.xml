@@ -44,7 +44,7 @@
     <integer name="config_screenBrightnessDoze">15</integer>
 
     <!-- Doze: force using accelerometer as pick up sensor -->
-    <bool name="config_dozeUseAccelerometer">true</bool>
+    <!-- <bool name="config_dozeUseAccelerometer">true</bool>	error: Resource at config_dozeUseAccelerometer appears in overlay but not in the base      package; use <add-resource> to add. -->
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
