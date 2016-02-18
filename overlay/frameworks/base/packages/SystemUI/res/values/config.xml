@@ -27,7 +27,27 @@
     <bool name="doze_display_state_supported">true</bool>
 
     <!-- Doze: should the pickup sensor be used as a pulse signal? -->
-    <bool name="doze_pulse_on_pick_up">false</bool>
+    <bool name="doze_pulse_on_pick_up">true</bool>
+
+    <!-- Doze: shake accelerometer threshold -->
+    <integer name="doze_shake_accelerometer_threshold">10</integer>
+
+    <!-- Doze: pulse parameter - how long does it take to fade in? -->
+    <integer name="doze_pulse_duration_in">900</integer>
+
+    <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
+    <integer name="doze_pulse_duration_visible">3000</integer>
+
+    <!-- Doze: pulse parameter - how long does it take to fade out? -->
+    <integer name="doze_pulse_duration_out">600</integer>
+
+    <!-- Doze: when to pulse after a buzzworthy notification arrives -->
+    <string name="doze_pulse_schedule" translatable="false">5s,10s,15s,20s</string>
+
+    <!-- Enable the option to check proximity sensor when deciding whether to turn the screen on
+    NOTE ! - Enable for devices that have a fast response proximity sensor -->
+
+    <bool name="config_proximityCheckOnWake">true</bool>
 
     <!-- Whether recents should use hardware layers for its taskviews. This flag can be enabled
          for devices where the java drawing of round rects may be slow -->
